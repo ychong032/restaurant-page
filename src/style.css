@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+#content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    background-color: rgb(71, 43, 43);
+}
+
+.header button {
+    font-size: large;
+    background-color: rgb(71, 43, 43);
+    color: rgb(234, 194, 91);
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+}
+
+.image-container {
+    height: 100%;
+    width: 100%;
+    background-image: url("assets/food.png");
+    background-size: 100% 100%;
+    /*filter: blur(1px);*/
+}
+
+.overlay {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.titleCard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.titleCard h1 {
+    font-size: 72px;
+}
+
+.titleCard p {
+    font-size: 24px;
+}
+
+.footer {
+    background-color: rgb(71, 43, 43);
+    color: rgb(234, 194, 91);
+    text-align: center;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer a,
+.footer a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer svg {
+    transition: 0.5s;
+}
+
+.footer svg:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
