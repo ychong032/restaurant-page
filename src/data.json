@@ -23,7 +23,7 @@
         {
             "name": "Ploughman's Lunch",
             "description": "A simple meal for the hardworking Hobbit.",
-            "price": "$6.99",
+            "price": "$8.99",
             "src": "../src/assets/ploughman.png"
         },
         {
@@ -31,6 +31,12 @@
             "description": "Gollum would be disappointed.",
             "price": "$9.99",
             "src": "../src/assets/rabbits.png"
+        },
+        {
+            "name": "Roast Chicken",
+            "description": "Seasoned with the best salt in all the Shire.",
+            "price": "$7.99",
+            "src": "../src/assets/roast-chicken.png"
         }
     ],
     "desserts": [
