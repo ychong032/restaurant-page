@@ -1,0 +1,58 @@
+{
+    "appetisers": [
+        {
+            "name": "Bofur's Mince Pies",
+            "description": "Perfect for uninvited guests.",
+            "price": "$2.99",
+            "src": "../src/assets/bofur.png"
+        },
+        {
+            "name": "Lembas Bread",
+            "description": "Never enough for Hobbits.",
+            "price": "$0.99",
+            "src": "../src/assets/lembas.png"
+        },
+        {
+            "name": "Sam's Potatoes",
+            "description": "Available boiled, mashed, or stewed.",
+            "price": "$1.99",
+            "src": "../src/assets/potato.png"
+        }
+    ],
+    "mains": [
+        {
+            "name": "Ploughman's Lunch",
+            "description": "A simple meal for the hardworking Hobbit.",
+            "price": "$6.99",
+            "src": "../src/assets/ploughman.png"
+        },
+        {
+            "name": "Brace of Coneys",
+            "description": "Gollum would be disappointed.",
+            "price": "$9.99",
+            "src": "../src/assets/rabbits.png"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "Madeira Cake",
+            "description": "For ages 0 to 111.",
+            "price": "$4.99",
+            "src": "../src/assets/madeira-cake.png"
+        },
+        {
+            "name": "Strawberry Tarts",
+            "description": "Comes with cream.",
+            "price": "$4.99",
+            "src": "../src/assets/strawberries.png"
+        }
+    ],
+    "beverages": [
+        {
+            "name": "Mug of Ale",
+            "description": "Choice of ale or mead. Also comes in pints.",
+            "price": "Mug/Pint $2.99/$3.99",
+            "src": "../src/assets/ale.png"
+        }
+    ]
+}

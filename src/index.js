@@ -1,32 +1,51 @@
-import { pageLoad } from "./home";
+import { showHome } from "./home";
+import { showMenu } from "./menu";
 import "./style.css";
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
 import "@fortawesome/fontawesome-free/js/regular";
 import "@fortawesome/fontawesome-free/js/brands";
 
-const content = document.querySelector("#content");
-loadHeader();
-pageLoad();
+let currentTab = loadHeader();
+const content = loadContent();
 loadFooter();
+showHome();
 
 function loadHeader() {
     const header = document.createElement("div");
     header.classList.add("header");
 
+    const buttons = document.createElement("div");
+    buttons.classList.add("buttons");
+
     const homeButton = document.createElement("button");
     homeButton.textContent = "Home";
-    header.appendChild(homeButton);
+    homeButton.addEventListener("click", navigateHome);
+    homeButton.classList.add("current-tab");
+    buttons.appendChild(homeButton);
 
     const menuButton = document.createElement("button");
     menuButton.textContent = "Menu";
-    header.appendChild(menuButton);
+    menuButton.addEventListener("click", navigateMenu);
+    buttons.appendChild(menuButton);
 
     const contactButton = document.createElement("button");
     contactButton.textContent = "Contact";
-    header.appendChild(contactButton);
+    contactButton.addEventListener("click", navigateContact);
+    buttons.appendChild(contactButton);
 
-    content.appendChild(header);
+    header.appendChild(buttons);
+
+    document.body.appendChild(header);
+
+    return homeButton;
+}
+
+function loadContent() {
+    const content = document.createElement("div");
+    content.setAttribute("id", "content");
+    document.body.appendChild(content);
+    return content;
 }
 
 function loadFooter() {
@@ -48,5 +67,35 @@ function loadFooter() {
 
     footer.appendChild(iconLink);
 
-    content.appendChild(footer);
+    document.body.appendChild(footer);
+}
+
+function navigateHome(e) {
+    if (!e.target.classList.contains("current-tab")) {
+        e.target.classList.toggle("current-tab");
+        currentTab.classList.toggle("current-tab");
+        currentTab = e.target;
+        content.childNodes.forEach((child) => content.removeChild(child));
+        showHome();
+    }
+}
+
+function navigateMenu(e) {
+    if (!e.target.classList.contains("current-tab")) {
+        e.target.classList.toggle("current-tab");
+        currentTab.classList.toggle("current-tab");
+        currentTab = e.target;
+        content.childNodes.forEach((child) => content.removeChild(child));
+        showMenu();
+    }
+}
+
+function navigateContact(e) {
+    if (!e.target.classList.contains("current-tab")) {
+        e.target.classList.toggle("current-tab");
+        currentTab.classList.toggle("current-tab");
+        currentTab = e.target;
+        content.childNodes.forEach((child) => content.removeChild(child));
+        // showContact();
+    }
 }

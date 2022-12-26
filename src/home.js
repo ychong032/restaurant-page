@@ -1,12 +1,8 @@
-export function pageLoad() {
+export function showHome() {
     const content = document.querySelector("#content");
 
     const container = document.createElement("div");
     container.classList.add("container");
-
-    const imageContainer = document.createElement("div");
-    imageContainer.classList.add("image-container");
-    container.appendChild(imageContainer);
 
     const overlay = document.createElement("div");
     overlay.classList.add("overlay");
@@ -19,7 +15,7 @@ export function pageLoad() {
     titleCard.appendChild(title);
 
     const subtitle = document.createElement("p");
-    subtitle.textContent = "Food so good you'll be here and back again.";
+    subtitle.textContent = "An unexpected establishment.";
     titleCard.appendChild(subtitle);
 
     container.appendChild(overlay);
