@@ -1,8 +1,12 @@
-# Bilbo's Buffet
+# Bilbo's Bistro
 
-A mock restaurant page created with HTML, CSS, and JavaScript. Currently a work in progress.
+A mock restaurant page created with HTML, CSS, and JavaScript.
 
 ![Preview image of restaurant page](preview.png)
+![Preview image of restaurant page](preview2.png)
+![Preview image of restaurant page](preview3.png)
+
+Check it out on GitHub Pages [here](https://ychong032.github.io/restaurant-page).
 
 ## Credits
 
