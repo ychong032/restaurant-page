@@ -1,7 +1,12 @@
+function importAll(r) {
+    r.keys().forEach(r);
+}
+
 import { showHome } from "./home";
 import { showMenu } from "./menu";
 import { showContact } from "./contact";
 import "./style.css";
+importAll(require.context("./assets/", false, /\.jpg\.svg\.png$/));
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
 import "@fortawesome/fontawesome-free/js/regular";
