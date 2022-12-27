@@ -60,5 +60,37 @@
             "price": "Mug/Pint $2.99/$3.99",
             "src": "../src/assets/ale.png"
         }
+    ],
+    "staff": [
+        {
+            "name": "Bilbo Baggins",
+            "role": "Owner, Manager",
+            "src": "../src/assets/baggins.png"
+        },
+        {
+            "name": "Frodo Baggins",
+            "role": "Assistant Manager",
+            "src": "../src/assets/frodo.png"
+        },
+        {
+            "name": "Samwise Gamgee",
+            "role": "Chef",
+            "src": "../src/assets/sam.png"
+        },
+        {
+            "name": "Meriadoc Brandybuck",
+            "role": "Receptionist",
+            "src": "../src/assets/merry.png"
+        },
+        {
+            "name": "Peregrin Took",
+            "role": "Waiter",
+            "src": "../src/assets/pippin.png"
+        },
+        {
+            "name": "Smeagol aka Gollum",
+            "role": "Dishwasher",
+            "src": "../src/assets/smeagol.png"
+        }
     ]
 }

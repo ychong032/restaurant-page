@@ -1,3 +1,21 @@
+@font-face {
+    font-family: aniron;
+    src: url("assets/anirm___.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: albertus;
+    src: url("assets/AlbertusMT.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: ringbearer;
+    src: url("assets/RINGM___.TTF") format("truetype");
+    font-weight: 400;
+}
+
 * {
     margin: 0;
     padding: 0
@@ -23,6 +41,7 @@ body {
 
 button {
     font-size: large;
+    font-family: albertus;
     background-color: #1A120B;
     color: rgb(234, 194, 91);
     border: none;
@@ -72,15 +91,23 @@ button.current-tab:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    gap: 1rem;
+    color: #e1e1e1;
+    width: 100%;
 }
 
 .titleCard h1 {
-    font-size: 72px;
+    font-size: 48px;
+    font-family: aniron, monospace;
+    font-weight: 400;
+    border-top: 2px solid rgb(206 148 0);
+    border-bottom: 2px solid rgb(206 148 0);
+    padding: 0 1rem;
 }
 
 .titleCard p {
     font-size: 24px;
+    font-family: albertus;
 }
 
 .menu-block {
@@ -96,10 +123,11 @@ button.current-tab:hover {
     color: white;
     overflow: auto;
     height: 75%;
+    font-family: albertus;
 }
 
 .menu-block::-webkit-scrollbar {
-    width: 0.7em;
+    width: 0.6em;
 }
 
 .menu-block::-webkit-scrollbar-track {
@@ -107,12 +135,18 @@ button.current-tab:hover {
 }
 
 .menu-block::-webkit-scrollbar-thumb {
-    background-color: hsl(37deg 74% 17%);
+    background-color: rgb(206 148 0);
 }
 
 .menu-header {
     color: white;
     text-align: center;
+    font-family: ringbearer;
+    font-weight: 400;
+}
+
+.menu-header:not(:first-child) {
+    margin-top: 2rem;
 }
 
 .food-item {
@@ -120,22 +154,47 @@ button.current-tab:hover {
     gap: 3rem;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 150px;
+    background-color: #3b3b3b8a;
 }
 
-.food-info {
+.staff-item {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 150px;
+    gap: 2rem;
+    background-color: #3b3b3b8a;
+}
+
+.food-item:hover, .staff-item:hover {
+    background-color: #7070708a;
+}
+
+.food-info, .staff-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
+    padding-left: 1rem;
 }
 
-.food-description {
+.food-info > h2, .staff-info > h2 {
+    font-weight: 400;
+}
+
+.food-description, .staff-role {
     color: #ffffffb3;
+    font-size: large;
 }
 
-.food-picture {
+.food-picture, .staff-picture {
     width: 100%;
     height: 100%;
+}
+
+.contact-item {
+    display: flex;
+    gap: 0.5rem;
+    font-size: large;
 }
 
 .footer {
@@ -147,6 +206,7 @@ button.current-tab:hover {
     justify-content: center;
     align-items: center;
     gap: 8px;
+    font-family: albertus;
 }
 
 .footer a,

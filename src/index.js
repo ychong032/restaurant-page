@@ -1,5 +1,6 @@
 import { showHome } from "./home";
 import { showMenu } from "./menu";
+import { showContact } from "./contact";
 import "./style.css";
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
@@ -96,6 +97,6 @@ function navigateContact(e) {
         currentTab.classList.toggle("current-tab");
         currentTab = e.target;
         content.childNodes.forEach((child) => content.removeChild(child));
-        // showContact();
+        showContact();
     }
 }

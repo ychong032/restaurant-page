@@ -10,6 +10,14 @@ export function showHome() {
     const titleCard = document.createElement("div");
     titleCard.classList.add("titleCard");
 
+    const titleIcon = document.createElement("i");
+    titleIcon.classList.add("fa-solid", "fa-utensils", "fa-3x", "fa-bounce");
+    titleIcon.setAttribute(
+        "style",
+        "--fa-animation-iteration-count: 3; --fa-bounce-rebound: 0;"
+    );
+    titleCard.appendChild(titleIcon);
+
     const title = document.createElement("h1");
     title.textContent = "Bilbo's Bistro";
     titleCard.appendChild(title);
