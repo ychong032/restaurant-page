@@ -2,7 +2,7 @@
 
 A mock restaurant page created with HTML, CSS, and JavaScript.
 
-![Preview image of restaurant page](preview.png)
+![Preview image of restaurant page](preview1.png)
 ![Preview image of restaurant page](preview2.png)
 ![Preview image of restaurant page](preview3.png)
 
