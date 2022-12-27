@@ -1,4 +1,5 @@
 const data = require("./data.json");
+import images from "./index.js";
 
 export function showContact() {
     const content = document.querySelector("#content");
@@ -80,7 +81,7 @@ function loadStaff(menuBlock) {
 
         const staffPicture = document.createElement("img");
         staffPicture.classList.add("staff-picture");
-        staffPicture.src = staff.src;
+        staffPicture.src = images[staff.src];
 
         staffItem.appendChild(staffInfo);
         staffItem.appendChild(staffPicture);

@@ -1,4 +1,5 @@
 const data = require("./data.json");
+import images from "./index.js";
 
 export function showMenu() {
     const content = document.querySelector("#content");
@@ -70,7 +71,7 @@ function loadFoodItems(menuSection, menuBlock) {
 
         const foodPicture = document.createElement("img");
         foodPicture.classList.add("food-picture");
-        foodPicture.src = obj.src;
+        foodPicture.src = images[obj.src];
 
         foodItem.appendChild(foodInfo);
         foodItem.appendChild(foodPicture);

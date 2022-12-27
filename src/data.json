@@ -4,19 +4,19 @@
             "name": "Bofur's Mince Pies",
             "description": "Perfect for uninvited guests.",
             "price": "$2.99",
-            "src": "../src/assets/bofur.png"
+            "src": "bofur.png"
         },
         {
             "name": "Lembas Bread",
             "description": "Never enough for Hobbits.",
             "price": "$0.99",
-            "src": "../src/assets/lembas.png"
+            "src": "lembas.png"
         },
         {
             "name": "Sam's Potatoes",
             "description": "Available boiled, mashed, or stewed.",
             "price": "$1.99",
-            "src": "../src/assets/potato.png"
+            "src": "potato.png"
         }
     ],
     "mains": [
@@ -24,19 +24,19 @@
             "name": "Ploughman's Lunch",
             "description": "A simple meal for the hardworking Hobbit.",
             "price": "$8.99",
-            "src": "../src/assets/ploughman.png"
+            "src": "ploughman.png"
         },
         {
             "name": "Brace of Coneys",
             "description": "Gollum would be disappointed.",
             "price": "$9.99",
-            "src": "../src/assets/rabbits.png"
+            "src": "rabbits.png"
         },
         {
             "name": "Roast Chicken",
             "description": "Seasoned with the best salt in all the Shire.",
             "price": "$7.99",
-            "src": "../src/assets/roast-chicken.png"
+            "src": "roast-chicken.png"
         }
     ],
     "desserts": [
@@ -44,13 +44,13 @@
             "name": "Madeira Cake",
             "description": "For ages 0 to 111.",
             "price": "$4.99",
-            "src": "../src/assets/madeira-cake.png"
+            "src": "madeira-cake.png"
         },
         {
             "name": "Strawberry Tarts",
             "description": "Comes with cream.",
             "price": "$4.99",
-            "src": "../src/assets/strawberries.png"
+            "src": "strawberries.png"
         }
     ],
     "beverages": [
@@ -58,39 +58,39 @@
             "name": "Mug of Ale",
             "description": "Choice of ale or mead. Also comes in pints.",
             "price": "Mug/Pint $2.99/$3.99",
-            "src": "../src/assets/ale.png"
+            "src": "ale.png"
         }
     ],
     "staff": [
         {
             "name": "Bilbo Baggins",
             "role": "Owner, Manager",
-            "src": "../src/assets/baggins.png"
+            "src": "baggins.png"
         },
         {
             "name": "Frodo Baggins",
             "role": "Assistant Manager",
-            "src": "../src/assets/frodo.png"
+            "src": "frodo.png"
         },
         {
             "name": "Samwise Gamgee",
             "role": "Chef",
-            "src": "../src/assets/sam.png"
+            "src": "sam.png"
         },
         {
             "name": "Meriadoc Brandybuck",
             "role": "Receptionist",
-            "src": "../src/assets/merry.png"
+            "src": "merry.png"
         },
         {
             "name": "Peregrin Took",
             "role": "Waiter",
-            "src": "../src/assets/pippin.png"
+            "src": "pippin.png"
         },
         {
             "name": "Smeagol aka Gollum",
             "role": "Dishwasher",
-            "src": "../src/assets/smeagol.png"
+            "src": "smeagol.png"
         }
     ]
 }

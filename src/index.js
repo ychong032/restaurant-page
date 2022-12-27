@@ -1,12 +1,7 @@
-function importAll(r) {
-    r.keys().forEach(r);
-}
-
 import { showHome } from "./home";
 import { showMenu } from "./menu";
 import { showContact } from "./contact";
 import "./style.css";
-importAll(require.context("./assets/", false, /\.jpg\.svg\.png$/));
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
 import "@fortawesome/fontawesome-free/js/regular";
@@ -16,6 +11,20 @@ let currentTab = loadHeader();
 const content = loadContent();
 loadFooter();
 showHome();
+
+const images = importAll(
+    require.context("./assets", false, /\.(png|jpe?g|svg)$/)
+);
+
+export default images;
+
+function importAll(r) {
+    let images = {};
+    r.keys().map((item) => {
+        images[item.replace("./", "")] = r(item);
+    });
+    return images;
+}
 
 function loadHeader() {
     const header = document.createElement("div");
